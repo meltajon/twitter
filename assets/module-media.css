@@ -1,0 +1,6 @@
+#media { 
+	display: flex; 
+	align-content: flex-start; flex-wrap: wrap;
+}
+#media-title { display: none; }
+.media-thumb-link { max-height: 100px; }

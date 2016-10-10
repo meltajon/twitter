@@ -1,0 +1,56 @@
+@font-face { font-family: 'rosettaicons'; src: url('rosetta-icons-regular.ttf'); }
+
+/* Globals
+-------------------------------------------------------*/
+* { box-sizing: border-box; }
+
+body { 
+	display: flex; 
+	min-height: 100vh;
+	flex-direction: column; justify-content: space-between;
+	color: #605E58; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 300;
+}
+
+a:link,
+a:visited { text-decoration: none; }
+
+.rosetta-icon { font-family: "rosettaicons"; text-align: center; }
+
+.aside-wrapper { padding: 40px 40px 0; }
+
+/* Main
+-------------------------------------------------------*/
+#main { 
+	background: #F2EEE8;
+	border: 1px solid #F1EDE7; border-width: 1px 0 0;
+}
+#panel1 { background: #82A6CA; }
+#panel3 { background: #FFF; }
+#panel3 ul {
+	padding: 0;
+	list-style: none;
+}
+
+@media (max-width: 1060px) {
+	#main { }
+
+	#panel1 {  }
+
+	.panel1-wrapper { padding: 40px; }
+
+	#panel2 { margin: 40px; }
+	#panel3 { min-width: 300px; }
+}
+@media (min-width: 1061px) {
+	#main { 
+		display: flex;
+		flex-grow: 1; flex-basis: auto;
+	}
+
+	#panel1 { min-width: calc(100px * 3); max-width: calc(100px * 3); }
+
+	.panel1-wrapper { padding: 40px; }
+
+	#panel2 { margin: 40px; }
+	#panel3 { min-width: 300px; }
+}

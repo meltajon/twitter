@@ -1,0 +1,20 @@
+#follows a:link,
+#follows a:visited { color: #605E58; }
+#follows a:hover { color: #6F92B6; }
+
+.follow { 
+	display: flex; 
+	align-items: center;
+	margin: 0 0 10px;
+}
+
+.follow-panel1 { margin: 0 10px 0 0; }
+.follow-avatar { 
+	width: 45px; height: 45px;
+	border-radius: 50%; 
+}
+.follow-name {  }
+.follow-description { 
+	display: block; 
+	color: #C6C1B4;
+}

@@ -1,0 +1,66 @@
+/* Header
+-------------------------------------------------------*/
+#header { 
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	border: 1px solid #F5F1EB; border-width: 0 0 1px;
+}
+#header * { outline: 1px solid red; }
+.header-item { 
+	display: flex;
+	flex-basis: 0; /* for #header */
+	align-content: center; justify-content: center;
+	padding: 10px;
+}
+
+#header-nav { 
+	display: flex;
+	flex-basis: content; order: -1; 
+	font-size: 21px; 
+}
+
+#logo { flex-basis: 100%; }
+#home-link { color: #82A6CA; font-size: 30px; }
+#home-link:before { 
+	display: block;
+	padding: 10px;
+	content: "\f179";
+}
+#home-link span { display: none; }
+
+.nav-item {
+	display: block;
+	width: 45px; height: 45px; padding: 10px;
+	border-radius: 50%;
+	color: #605E58;
+}
+.nav-item:before { display: block; }
+.nav-item span { display: none; }
+#compose-button { background: #82A6CA; }
+#compose-button:before { 
+	content: "\F029"; 
+	color: #FFF;
+}
+#notifications-button:before { content: "\F055"; }
+#dm-button:before { content: "\F054"; }
+#trending-button:before { content: "\F052"; }
+
+#search-input { 
+	padding: 5px 15px;
+	margin: 0 10px;
+	border: 1px solid #CCCCCC; border-radius: 50px;
+}
+
+#account-link {
+	display: inline-block;
+	border-radius: 50%;
+}
+#account-link:before { 
+	display: block;
+	content: " ";
+	width: 50px; height: 50px;
+	background: url('../uploads/avatar-mel-tajon.jpg') no-repeat center; background-size: 50px;
+	border-radius: 50%;
+}
+#account-button { display: none; }

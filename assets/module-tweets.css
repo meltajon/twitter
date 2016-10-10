@@ -1,0 +1,73 @@
+/* Tweet
+-------------------------------------------------------*/
+.tweet { 
+	display: flex;
+	background: #FFF;
+	border: 1px solid #F1EDE8; border-width: 1px 1px 0;
+}
+.tweet:last-of-type { border-width: 1px; }
+
+@media (max-width: 1100px) {
+	.tweet { padding: 10px 10px 5px; }
+}
+@media (min-width: 1101px) and (max-width: 1200px) {
+	.tweet { padding: 25px 25px 10px; }
+}
+@media (min-width: 1201px) {
+	.tweet { padding: 35px 35px 20px; }
+}
+
+.tweet a:link,
+.tweet a:visited { color: #C5C1B0; }
+
+.tweet-panel1 { margin: 0 10px 0 0; }
+.tweet-avatar {
+	width: 50px; height: 50px;
+	border-radius: 50%;
+}
+
+.tweet-panel2 { }
+
+/* Tweet Header
+-------------------------------------------------------*/
+.tweet-header { 
+	display: flex; 
+	justify-content: space-between;
+}
+.tweet-author-display-name { color: #57575F; font-weight: bold; }
+
+.tweet_retweeted .tweet-author-display-name:before {
+	display: inline-block;
+	content: "\f152";
+	margin: 0 5px 0 0;
+	color: #ACD675; font-family: "rosettaicons"; font-size: 1rem; 
+	vertical-align: top;
+}
+
+.tweet-figure { margin: 1em 0; }
+.tweet-figure img { max-width: 100%; }
+
+/* Tweet Actions
+-------------------------------------------------------*/
+.tweet-actions { margin: 1em 0 0; }
+.tweet-action { margin: 7px; }
+.tweet-action span { font-size: 0; }
+.tweet-action span:before { 
+	display: inline-block;
+	color: #C5C1B0; font-family: "rosettaicons"; font-size: 1rem;
+}
+.tweet-action_reply span:before { content: "\f151"; }
+.tweet-action_retweet span:before { content: "\f152"; }
+.tweet-action_favorite span:before { content: "\f147"; }
+.tweet-action_more span:before { content: "\f150"; }
+
+.tweet-action_favorite span[data-favorites]:after,
+.tweet-action_retweet span[data-retweets]:after { 
+	display: inline-block; 
+	padding: 2px 0 0;
+	margin: 0 0 0 4px;
+	font-size: .8rem;
+	vertical-align: top; 
+}
+.tweet-action_favorite span:after { content: attr(data-favorites); }
+.tweet-action_retweet span:after { content: attr(data-retweets); }

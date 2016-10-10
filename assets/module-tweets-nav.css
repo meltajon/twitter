@@ -1,0 +1,20 @@
+/* Tweets Nav
+-------------------------------------------------------*/
+#tweets-nav { 
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 2em;
+	background: #FFF;
+}
+.tweets-nav-item {
+	flex-grow: 1;
+	padding: 15px 0;
+	color: #C5C1B0; text-align: center; text-transform: uppercase;
+}
+.tweets-nav-item:link,
+.tweets-nav-item:visited { }
+.tweets-nav-item span { 
+	display: block;
+	color: #605E58; font-weight: bold;
+}
+.tweets-nav-item_active { border: 5px solid #82A6CA; border-width: 0 0 5px; }

@@ -1,0 +1,18 @@
+#activities { color: #6F92B6; }
+#activities-list { 
+	padding: 0; 
+	list-style: none; 
+}
+.activities-item:before { 
+	margin: 0 4px 0 0;
+	font-family: "rosettaicons"; 
+}
+.activities-item_followed:before { content: "\f183"; }
+.activities-item_replied:before { content: "\f151"; }
+.activities-item_retweeted:before { content: "\f152"; }
+.activities-item_favorited:before { content: "\f147"; }
+
+#activities a:link,
+#activities a:visited { color: #EEE; }
+#activities a:hover { color: #FFF; }
+#activities-title { color: #FFF; font-size: 1rem; font-weight: 300; text-transform: uppercase; }
