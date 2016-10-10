@@ -34,10 +34,6 @@ a:visited { text-decoration: none; }
 @media (max-width: 1060px) {
 	#main { }
 
-	#panel1 {  }
-
-	.panel1-wrapper { padding: 40px; }
-
 	#panel2 { margin: 40px; }
 	#panel3 { min-width: 300px; }
 }
@@ -48,8 +44,6 @@ a:visited { text-decoration: none; }
 	}
 
 	#panel1 { min-width: calc(100px * 3); max-width: calc(100px * 3); }
-
-	.panel1-wrapper { padding: 40px; }
 
 	#panel2 { margin: 40px; }
 	#panel3 { min-width: 300px; }

@@ -2,5 +2,8 @@
 	display: flex; 
 	align-content: flex-start; flex-wrap: wrap;
 }
+@media (max-width: 1060px) {
+	#media { display: none; }
+}
 #media-title { display: none; }
 .media-thumb-link { max-height: 100px; }
