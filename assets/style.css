@@ -16,8 +16,6 @@ a:visited { text-decoration: none; }
 
 .rosetta-icon { font-family: "rosettaicons"; text-align: center; }
 
-.aside-wrapper { padding: 40px 40px 0; }
-
 /* Main
 -------------------------------------------------------*/
 #main { 
@@ -40,8 +38,12 @@ a:visited { text-decoration: none; }
 	list-style: none;
 }
 
-@media (max-width: 1060px) {
-	#panel3 { min-width: 300px; }
+@media (min-width: 460px) and (max-width: 1060px) {
+	#asides {
+		display: flex;
+		justify-content: flex-start;
+	}
+	#asides aside { flex-grow: 1; }
 }
 @media (min-width: 1061px) {
 	#main { 

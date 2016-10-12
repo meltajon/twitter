@@ -1,2 +1,20 @@
+@media (max-width: 360px) {
+	#trending-topics .aside-wrapper { padding: 20px 10px; }
+}
+@media (min-width: 361px) and (max-width: 700px) {
+	#trending-topics .aside-wrapper { padding: 20px; }
+}
+@media (min-width: 701px) and (max-width: 1060px) {
+	#trending-topics .aside-wrapper { padding: 20px 40px; }
+}
+@media (min-width: 1061px) {
+	#trending-topics .aside-wrapper { padding: 40px 40px 0; }
+}
+
 #trending-topics a:link,
 #trending-topics a:visited { color: #6F92B6; }
+
+#trending-topics-title { 
+	margin: 0 0 1em; 
+	font-size: 1rem; font-weight: normal; text-transform: uppercase;
+}
