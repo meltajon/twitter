@@ -6,7 +6,7 @@
 				Tweets <span>200</span>
 			</a>
 			<a class="tweets-nav-item" href="#">
-				Photos/Video <span>200</span>
+				Media <span>200</span>
 			</a>
 			<a class="tweets-nav-item" href="#">
 				Following <span>200</span>

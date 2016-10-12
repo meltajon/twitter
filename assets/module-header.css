@@ -2,11 +2,10 @@
 -------------------------------------------------------*/
 #header { 
 	display: flex;
-	justify-content: space-between;
+	align-items: center; justify-content: space-between;
 	padding: 0 20px;
 	border: 1px solid #F5F1EB; border-width: 0 0 1px;
 }
-#header * { outline: 1px solid red; }
 .header-item { 
 	display: flex;
 	flex-basis: 0; /* for #header */
@@ -16,11 +15,10 @@
 
 #header-nav { 
 	display: flex;
-	flex-basis: content; order: -1; 
+	flex-basis: content;
 	font-size: 21px; 
 }
 
-#logo { flex-basis: 100%; }
 #home-link { color: #82A6CA; font-size: 30px; }
 #home-link:before { 
 	display: block;
@@ -59,8 +57,19 @@
 #account-link:before { 
 	display: block;
 	content: " ";
-	width: 50px; height: 50px;
 	background: url('../uploads/avatar-mel-tajon.jpg') no-repeat center; background-size: 50px;
 	border-radius: 50%;
 }
 #account-button { display: none; }
+
+@media (max-width: 640px) {
+	#compose-button { display: none; }
+	#search { display: none; }
+	#account-link:before { width: 40px; height: 40px; }
+}
+@media (min-width: 641px) {
+	#header-nav { order: -1; }
+	#logo { flex-basis: 100%; }
+	#account-link:before { width: 50px; height: 50px; }
+
+}

@@ -1,6 +1,21 @@
+@media (max-width: 360px) {
+	#follows .aside-wrapper { padding: 20px 10px; }
+}
+@media (min-width: 361px) and (max-width: 700px) {
+	#follows .aside-wrapper { padding: 20px; }
+}
+@media (min-width: 701px) {
+	#follows .aside-wrapper { padding: 20px 40px; }
+}
+
 #follows a:link,
 #follows a:visited { color: #605E58; }
 #follows a:hover { color: #6F92B6; }
+
+#follows-title { 
+	margin: 0 0 1em; 
+	font-size: 1rem; font-weight: normal; text-transform: uppercase;
+}
 
 .follow { 
 	display: flex; 

@@ -1,4 +1,10 @@
-#activities { color: #6F92B6; }
+#activities { 
+	padding: 20px;
+	color: #6F92B6; 
+}
+@media (max-width: 1060px) {
+	#activities { display: none; }
+}
 #activities-list { 
 	padding: 0; 
 	list-style: none; 

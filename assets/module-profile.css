@@ -1,10 +1,9 @@
-#profile { color: #FFF; text-align: center; }
+#profile { color: #FFF; }
 #profile-avatar {
-	width: 100%; max-width: 100px; max-height: 100px;
+	width: 100px; max-width: 100px; height: 100%; max-height: 100px;
 	border-radius: 50%;
 }
 
-#profile-url { margin: 1rem 0; }
 #profile-url a:link,
 #profile-url a:visited { color: #FFF; }
 #profile-url a:before { 
@@ -12,10 +11,43 @@
 	content: "\f098";
 	margin: 0 4px 0;
 }
+
+#profile-display-name { font-size: 1.2rem; }
 #profile-follow-button { 
-	padding: 15px 70px;
 	color: #FFF;
 	background: #6F92B6; 
 	border: 0; border-radius: 50px;
 }
 #profile-follow-button ins { display: none; }
+
+@media (max-width: 460px) {
+	#profile { text-align: center; }
+	#profile .panel1-wrapper { padding: 40px 20px 0; }
+	#profile .panel2-wrapper { padding: 0 20px 40px; }
+
+	#profile-url { margin: 1rem 0; }
+	#profile-follow-button { padding: 15px 70px; }
+}
+@media (min-width: 461px) and (max-width: 1060px) {
+	#profile { 
+		display: flex; 
+		align-items: center; justify-content: center;
+		padding: 20px;
+	}
+	#profile .panel1-wrapper { margin: 0 20px 0 0; }
+	
+	#profile-display-name { margin: 0; }
+	#profile-description { margin: 2px 0; }
+	#profile-follow-button { 
+		padding: 10px 35px; 
+		margin: 1rem 0 0;
+	}
+}
+@media (min-width: 1061px) {
+	#profile { text-align: center; }
+	#profile .panel1-wrapper { padding: 40px 20px 0; }
+	#profile .panel2-wrapper { padding: 0 20px 40px; }
+
+	#profile-url { margin: 1rem 0; }
+	#profile-follow-button { padding: 15px 70px; }
+}

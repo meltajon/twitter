@@ -15,7 +15,7 @@
 						<a href="#" class="tweet-timestamp-link">2m</a>
 					</header>
 					<div class="tweet-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Standard Bluetooth headphones will work just fine. But AirPods = better experience. #ProgressiveEnhancement
 					</div>
 					<footer class="tweet-actions">
 						<a href="#" class="tweet-action tweet-action_reply"><span>Reply</span></a>
